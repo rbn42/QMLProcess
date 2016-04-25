@@ -12,8 +12,10 @@ Launcher::Launcher(QObject *parent) :
 QString Launcher::launch(const QString &program)
 {
     m_process->start(program);
-    m_process->waitForFinished(-1);
-    QByteArray bytes = m_process->readAllStandardOutput();
-    QString output = QString::fromLocal8Bit(bytes);
-    return output;
+//    m_process->waitForFinished(0);
+   // m_process->waitForFinished(-1);
+   // QByteArray bytes = m_process->readAllStandardOutput();
+   // QString output = QString::fromLocal8Bit(bytes);
+    //return output;
+    return 0;
 }
