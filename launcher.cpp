@@ -9,9 +9,10 @@ Launcher::Launcher(QObject *parent) :
 {
 }
 
-QString Launcher::launch(const QString &program)
+QString Launcher::launch(const QString &program,
+        const QStringList &arguments)
 {
-    m_process->start(program);
+    m_process->start(program,arguments);
 //    m_process->waitForFinished(0);
    // m_process->waitForFinished(-1);
    // QByteArray bytes = m_process->readAllStandardOutput();
