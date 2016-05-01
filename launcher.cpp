@@ -8,7 +8,6 @@ Launcher::Launcher(QObject *parent) :
     m_process(new QProcess(this))
 {
 }
-
 QString Launcher::launch(const QString &program,
         const QStringList &arguments)
 {
