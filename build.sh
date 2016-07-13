@@ -4,4 +4,4 @@ cd build
 qmake  ..
 make
 cd ..
-cp ./qmldir ./build/QMLProcess
+#cp ./qmldir ./build/QMLProcess
