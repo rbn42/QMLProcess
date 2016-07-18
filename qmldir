@@ -1,3 +1,2 @@
 module QMLProcess   
 plugin proplugin
-Clock 1.0 Clock.qml
