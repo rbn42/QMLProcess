@@ -1,4 +1,4 @@
-rm build -r
-mkdir build;cd build
+mkdir build
+cd build
 qmake  ..
 make
