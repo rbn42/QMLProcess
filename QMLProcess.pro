@@ -12,3 +12,13 @@ SOURCES += QMLProcess.cpp launcher.cpp
 cpqmldir.files = $$PWD/qmldir
 cpqmldir.path = $$DESTDIR
 COPIES += cpqmldir
+
+#########################################
+## INTALLS
+#########################################
+INSTALL_DIR = $$[QT_INSTALL_QML]
+PLUGIN_IMPORT_PATH = QMLProcess
+target.path = $$INSTALL_DIR/$$PLUGIN_IMPORT_PATH
+qmldir.files += $$PWD/qmldir
+qmldir.path += $$INSTALL_DIR/$$PLUGIN_IMPORT_PATH
+INSTALLS += target qmldir
