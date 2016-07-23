@@ -1,6 +1,6 @@
 #include "launcher.h"
-#include <QtDebug>
 #include <QDir>
+#include <QtDebug>
 
 Launcher::Launcher(QObject* parent)
     : QObject(parent)
