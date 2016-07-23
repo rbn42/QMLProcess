@@ -1,4 +1,6 @@
 #include "launcher.h"
+#include <QtDebug>
+#include <QDir>
 
 Launcher::Launcher(QObject* parent)
     : QObject(parent)
@@ -16,7 +18,6 @@ QString Launcher::launch(const QString& program,
 QString Launcher::launch(const QString& program,
     const QStringList& arguments, const QString workingDirectory)
 {
-    m_process->setWorkingDirectory(workingDirectory);
-    m_process->start(program, arguments);
+    m_process->startDetached(program, arguments, workingDirectory, 0);
     return 0;
 }
