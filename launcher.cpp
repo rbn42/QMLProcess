@@ -18,6 +18,7 @@ QString Launcher::launch(const QString& program,
 QString Launcher::launch(const QString& program,
     const QStringList& arguments, const QString workingDirectory)
 {
+    qDebug() << program << arguments << workingDirectory;
     m_process->startDetached(program, arguments, workingDirectory, 0);
     return 0;
 }
